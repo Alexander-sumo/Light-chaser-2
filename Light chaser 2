@@ -1,0 +1,78 @@
+/* 
+
+ The goal of the program is turn on the LEDs from the pins 9,10,11,12 on one at a time in three second intervals.The main theme used is digital inputs.  
+
+*/ 
+
+ 
+ 
+
+// the setup function runs once when you press reset or power the board 
+
+void setup() { 
+
+// initialize digital pin LED_BUILTIN as an output.   
+
+  pinMode(12, OUTPUT); //setting pin 12 as output  
+
+  pinMode(11, OUTPUT); //setting pin 11 as output  
+
+  pinMode(10, OUTPUT); //setting pin 10 as output 
+
+pinMode(9, OUTPUT); //setting pin 9 as output 
+
+} 
+
+ 
+ 
+
+// the loop function runs over and over again forever  
+
+ 
+ 
+
+void loop() {  
+
+ digitalWrite(12,1);   // turn the LED on (HIGH is the voltage level)   
+
+  digitalWrite(11,0);  // turn the LED off  
+
+  digitalWrite(10,0);  // turn the LED off   
+
+  digitalWrite(9,0);  // turn the LED off   
+
+  delay(3000);                       // wait for three seconds   
+
+  digitalWrite(12, 0);    // turn the LED off by making the voltage LOW   
+
+  digitalWrite(11,1);    // turn the LED on  
+
+  digitalWrite(10,0);    //turn the LED off  
+
+  digitalWrite(9,0);  // turn the LED off   
+
+   delay(3000);                       // wait for three seconds   
+
+  digitalWrite(12,0); //turn the LED off  
+
+  digitalWrite(11,0); //turn the LED off  
+
+  digitalWrite(10,1); //turn the LED on  
+
+  digitalWrite(9,0);  // turn the LED off   
+
+  delay(3000); //wait for three seconds  
+
+digitalWrite(12,0); //turn the LED off  
+
+  digitalWrite(11,0); //turn the LED off  
+
+  digitalWrite(10,0); //turn the LED off  
+
+  digitalWrite(9,1);  // turn the LED on   
+
+  delay(3000); //wait for three seconds  
+
+   
+
+}  
